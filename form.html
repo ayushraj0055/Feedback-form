@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Admission Form</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-box {
+      width: 400px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 15px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+    }
+
+    .btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-box">
+    <h2>College Admission Form</h2>
+
+    <form>
+      <label>Student Name:</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Date of Birth:</label>
+      <input type="date">
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+      <input type="radio" name="gender"> Other
+      <br><br>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter email">
+
+      <label>Mobile Number:</label>
+      <input type="tel" placeholder="Enter mobile number">
+
+      <label>Course:</label>
+      <select>
+        <option>Select Course</option>
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>B.Com</option>
+        <option>BA</option>
+        <option>MBA</option>
+      </select>
+
+      <label>Address:</label>
+      <textarea rows="3"></textarea>
+
+      <label>
+        <input type="checkbox"> I agree to the terms and conditions
+      </label>
+
+      <br><br>
+      <input type="submit" value="Submit" class="btn">
+    </form>
+  </div>
+
+</body>
+</html>
